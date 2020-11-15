@@ -14,6 +14,7 @@
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
     * {
       font-family: 'Roboto';
     }
@@ -22,12 +23,15 @@
     .navbar {
       padding: 50px;
     }
+
     .brand-bold {
       font-weight: 900;
     }
+
     .brand-thin {
       font-weight: 300;
     }
+
     .auth-button {
       border-radius: 30px;
       padding: 6px 25px;
@@ -37,14 +41,17 @@
     .hero-message {
       margin: auto;
     }
+
     .hero-header {
       width: 300px;
       font-weight: 700;
       font-size: 2.3em;
     }
+
     .hero-header-home {
       color: #2EA5DE;
     }
+
     .hero-button {
       margin-top: 10px;
       border-radius: 30px;
@@ -52,9 +59,11 @@
       background-color: #43AB49;
       color: #FFFFFF;
     }
+
     .hero-button:hover {
       background-color: #53d059;
     }
+
     .hero-image {
       width: 430px;
       height: 350px;
@@ -64,11 +73,13 @@
     .about-us-section {
       padding: 70px 80px;
     }
+
     .about-us-image {
       width: 430px;
       height: 330px;
       text-align: center;
     }
+
     .about-us-message {
       text-align: center;
       margin: auto;
@@ -76,34 +87,127 @@
 
     /* Services section */
     .our-services-section {
-      padding: 0px 80px;
-      margin-bottom: 150px;
+      padding: 0px 80px 80px 80px;
       text-align: center;
     }
+
     .service-header {
       margin-bottom: 40px;
     }
+
     .service-card {
       padding: 20px 30px;
       margin: 0px 50px;
-      border-radius:16px;
-      -webkit-box-shadow:  2px 2px 3px 3pxx #e1e1e3;
-      box-shadow:  2px 2px 3px 3px #e1e1e3;
+      border-radius: 16px;
+      -webkit-box-shadow: 2px 2px 3px 3pxx #e1e1e3;
+      box-shadow: 2px 2px 3px 3px #e1e1e3;
     }
+
     .service-sub-header {
       margin: 10px 0px;
     }
+
     .service-p {
       color: #707070;
       padding: 10px;
     }
 
-    /* Mobile phones - tablets */
-    @media (max-width: 991px) {
+    /* Projects section styles */
+    .projects-section {
+      text-align: center;
+      padding: 60px;
+      border-radius: 50px;
+      background-color: #2EA5DE;
+      color: #FFFFFF;
+      margin-bottom: 0px;
     }
+
+    .project-message {
+      margin: auto;
+      text-align: left;
+      padding-left: 150px;
+    }
+
+    .project-message h3 {
+      color: #000000;
+    }
+
+    #carouselProjects {
+      margin-top: 40px;
+    }
+
+    .carousel-control-next span,
+    .carousel-control-prev span {
+      background-color: #000000;
+      border-radius: 50%;
+      padding: 10px;
+    }
+
+    /* Contact section styles */
+    .contact-section {
+      text-align: center;
+      padding: 60px;
+    }
+
+    .contact-header {
+      margin-bottom: 50px;
+    }
+
+    .contact-img {
+      width: 440px;
+      height: 250px;
+    }
+
+    .contact-card {
+      border-radius: 16px;
+      padding: 20px 30px;
+      -webkit-box-shadow: 2px 2px 3px 3pxx #e1e1e3;
+      box-shadow: 2px 2px 3px 3px #e1e1e3;
+    }
+
+    .first-name-input, .second-name-input, .email-input, .subject-input {
+      margin-top: 30px;
+    }
+
+    .contact-message {
+      margin: 30px 15px;
+    }
+
+    .contact-btn {
+      margin: 0px 15px 15px 15px;
+      border-radius: 30px;
+      background-color: #43AB49;
+      color: #FFFFFF;
+    }
+
+    .contact-btn:hover {
+      background-color: #53d059;
+    }
+
+    /* Footer section */
+    .footer-section {
+      background-color: #000000;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 70px;
+    }
+
+    .footer-header {
+      text-align: center;
+      margin: auto;
+      padding-bottom: 50px;
+    }
+
+    .footer-social-links {
+      padding: 0px 450px;
+    }
+
+    /* Mobile phones - tablets */
+    @media (max-width: 991px) {}
 
     /* Tablets */
     @media (min-width: 992px) and (max-width: 1199px) {
+
       /* Hero section styles */
       .hero-section {
         padding: 0 100px;
@@ -112,6 +216,7 @@
 
     /* Laptops */
     @media (min-width: 1200px) {
+
       /* Hero section styles */
       .hero-section {
         padding: 0 150px;
@@ -121,7 +226,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div id="app" class="container">
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#"><span class='brand-bold'>ZERAKI</span brand-thin>DECOR</span></a>
@@ -174,7 +279,8 @@
         </div>
         <div class="col-md-6 col-lg-6 about-us-message">
           <h3>About Us</h3>
-          <p>We pride ourselves in creating beautiful homes. We help you along the way from designing to shopping for the best home décor experience.</p>
+          <p>We pride ourselves in creating beautiful homes. We help you along the way from designing to shopping for
+            the best home décor experience.</p>
         </div>
       </div>
     </div>
@@ -187,19 +293,129 @@
           <div class="service-card">
             <img src="images/home-sm.png">
             <h5 class="service-sub-header">Home Decor</h5>
-            <p class="service-p">Our team of experienced interior designers follow best design practices to help you have a good design for your home.</p>
+            <p class="service-p">Our team of experienced interior designers follow best design practices to help you
+              have a good design for your home.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-6">
           <div class="service-card">
             <img src="images/furniture-supply-sm.png">
             <h5 class="service-sub-header">Furniture Supplies</h5>
-            <p class="service-p">We help you shop for the best looking furniture from our endeared collection. If you have your ideas, don't worry, we will build custom ones for you.</p>
+            <p class="service-p">We help you shop for the best looking furniture from our endeared collection. If you
+              have your ideas, don't worry, we will build custom ones for you.</p>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Our projects section -->
+    <div class="projects-section">
+      <h3 class="projects-header">Our Projects</h3>
+      <div id="carouselProjects" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-block w-100">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 project-message">
+                  <h3>Elon's Mansion</h3>
+                  <p>We redesigned the living room with warm colors to create a warm feeling.</p>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <img class="img-fluid" src="images/warm.png" alt="First slide">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 project-message">
+                  <h3>Bond's House</h3>
+                  <p>We used art to decorate the walls so as to match the artisic nature of our client.</p>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <img class="img-fluid" src="images/art.png" alt="First slide">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 project-message">
+                  <h3>Bill's office</h3>
+                  <p>We created amazing outdoor look and feel to help our client feel relaxed when reading books.</p>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <img class="img-fluid" src="images/green.png" alt="First slide">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselProjects" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselProjects" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Contact section -->
+    <div class="contact-section">
+      <h3 class="contact-header">Say Hi</h3>
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <img class="img-fluid contact-img" src="images/contact-us.png">
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <div class="contact-card">
+            <div class="row">
+              <div class="col-md-6 col-lg-6">
+                <input class="form-control first-name-input" type="text" placeholder="First Name">
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <input class="form-control second-name-input" type="text" placeholder="Second Name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-6">
+                <input class="form-control email-input" type="email" placeholder="Email">
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <input class="form-control subject-input" type="text" placeholder="Subject">
+              </div>
+            </div>
+            <div class="row">
+              <textarea class="form-control contact-message" placeholder="message"></textarea>
+            </div>
+            <div class="row">
+              <button class="btn btn-block contact-btn">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid footer-section">
+    <div class="row">
+      <h3 class="footer-header">Our Socials</h3>
+    </div>
+    <div class="row footer-social-links">
+      <div class="col-md-4 col-lg-4">
+        <a href="#"><img src="images/instagram.png"></a>
+      </div>
+      <div class="col-md-4 col-lg-4">
+        <a href="#"><img src="images/twitter.png"></a>
+      </div>
+      <div class="col-md-4 col-lg-4">
+        <a href="#"><img src="images/facebook.png"></a>
+      </div>
+    </div>
   </div>
 
   <!-- Optional JavaScript -->
@@ -216,6 +432,8 @@
 
   <!-- Vue JS -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+  <script src="vue.js"></script>
 </body>
 
 </html>
